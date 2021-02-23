@@ -8,4 +8,4 @@ categories:
   - Apresentação
 tags: []
 ---
-Essa é a minha primeira postagem. Pretendo nesse blog testtar a aprender coisas novas com o R
+Essa é a minha primeira postagem. Pretendo nesse blog testar a aprender coisas novas com o R
