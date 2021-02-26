@@ -6,3 +6,72 @@ slug: ambiente-de-negócios
 categories: []
 tags: []
 ---
+
+```{r}
+library(tidyverse)
+library(janitor)
+```
+
+# Iportando e Limpando os Dados
+## improtando
+
+```{r}
+# importando os dados de uma pasta em outra pasta
+
+library(readxl)
+DB2020 <- read_excel("~/R/diegoblog/arquivos/DB2020.xlsx", sheet = "All data", 
+    skip = 3)
+View(DB2020)
+
+```
+
+
+# Limpando a base de dados
+## Selação das variáveis e uso da função Coalesce
+
+```{r}
+eodb <- DB2020[ ,1:9]
+eodb <- eodb[ ,-6]
+eodb <- eodb %>%  janitor::clean_names() %>% janitor::remove_empty(c("rows","cols"))
+
+eodb <- eodb %>% 
+  mutate( pontuacao = dplyr::coalesce(ease_of_doing_business_score_db17_20_methodology,ease_of_doing_business_score_db15_methodology,ease_of_doing_business_score_db10_14_methodology))
+eodb <- eodb[ , c(1:5,9)] 
+eodb <- eodb %>% na.omit(pontuacao) %>% 
+  mutate(pontuacao = round(pontuacao,2))
+
+
+```
+
+## Selecionado os países dos Bricsa
+
+```{r}
+brics_2020 <- eodb %>% 
+  filter(economy %in% c("Brazil", "Russian Federation", "China", "India", "South Africa"), db_year == 2020)
+```
+
+## Gráfico com análises dos BRICS
+
+```{r}
+g_brics_1 <- brics_2020 %>% 
+  ggplot(aes(x = economy, y = pontuacao)) +
+ geom_bar(stat="identity", fill = "#31688e", colour="black") +
+   scale_y_continuous(limits = c(0,100))+
+  geom_text(aes(label= pontuacao), position = position_dodge(1), vjust = 2, color = "white", size = 6 )+ 
+   labs(x = "",
+        y = "Pontuação",
+     
+      caption = "") +
+ theme_minimal()+
+  theme(plot.caption=element_text(size=13, hjust=0))+
+ theme(plot.title = element_text(color = "black", size = 18, face = "bold"),
+         axis.text.x = element_text(face = "bold", size = 12))
+
+
+g_brics_1
+```
+
+
+
+
+
