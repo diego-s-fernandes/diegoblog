@@ -7,13 +7,16 @@ categories: []
 tags: []
 ---
 
-```{r}
+# Iportando e Limpando os Dados
+## importando
+
+Pra quem trabalha com produção de relatórios no dia a dia, a principal tarefa é baixa/importar os dados e tratá-los.
+
+```{r message=FALSE, warning=FALSE, paged.print=FALSE}
 library(tidyverse)
 library(janitor)
 ```
 
-# Iportando e Limpando os Dados
-## improtando
 
 ```{r}
 # importando os dados de uma pasta em outra pasta

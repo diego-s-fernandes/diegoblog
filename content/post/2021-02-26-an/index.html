@@ -10,29 +10,13 @@ tags: []
 <script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
 
 
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --</code></pre>
-<pre><code>## v ggplot2 3.3.3     v purrr   0.3.4
-## v tibble  3.0.3     v dplyr   1.0.3
-## v tidyr   1.1.2     v stringr 1.4.0
-## v readr   1.4.0     v forcats 0.5.1</code></pre>
-<pre><code>## Warning: package &#39;ggplot2&#39; was built under R version 4.0.3</code></pre>
-<pre><code>## Warning: package &#39;readr&#39; was built under R version 4.0.3</code></pre>
-<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.3</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>library(janitor)</code></pre>
-<pre><code>## Warning: package &#39;janitor&#39; was built under R version 4.0.3</code></pre>
-<pre><code>## 
-## Attaching package: &#39;janitor&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     chisq.test, fisher.test</code></pre>
 <div id="iportando-e-limpando-os-dados" class="section level1">
 <h1>Iportando e Limpando os Dados</h1>
-<div id="improtando" class="section level2">
-<h2>improtando</h2>
+<div id="importando" class="section level2">
+<h2>importando</h2>
+<p>Pra quem trabalha com produção de relatórios no dia a dia, a principal tarefa é baixa/importar os dados e tratá-los.</p>
+<pre class="r"><code>library(tidyverse)
+library(janitor)</code></pre>
 <pre class="r"><code># importando os dados de uma pasta em outra pasta
 
 library(readxl)
