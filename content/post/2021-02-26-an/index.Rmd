@@ -7,7 +7,7 @@ categories: []
 tags: []
 ---
 
-# Iportando e Limpando os Dados
+# Importando e Limpando os Dados
 ## importando
 
 Pra quem trabalha com produção de relatórios no dia a dia, a principal tarefa é baixa/importar os dados e tratá-los.
