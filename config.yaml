@@ -1,7 +1,7 @@
 baseurl: https://www.blogdodiegao.com/
 languageCode: en-us
 title: Blog do Diego
-theme: "anatole"
+theme: hugo-lithium
 googleAnalytics: ''
 disqusShortname: ''
 ignoreFiles:
