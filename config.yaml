@@ -11,7 +11,7 @@ ignoreFiles:
   - \.knit\.md$
   - \.utf8\.md$
 permalinks:
-  post: /:year/:month/:day/:slug/
+  post: /:day/:month/:year/:slug/
 menu:
   main:
     - name: Diego dos Santos Fernandes
@@ -22,6 +22,8 @@ menu:
       url: https://twitter.com/FernandesDiegao/
     - name: LinkedIn 
       url: https://www.linkedin.com/in/diego-fernandes-10908561/
+    - name: Medium 
+      url: https://medium.com/@FernandesDiegao
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
