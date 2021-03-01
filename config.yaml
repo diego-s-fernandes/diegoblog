@@ -38,3 +38,8 @@ params:
     height: 50
     url: logo.jpg
     width: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
