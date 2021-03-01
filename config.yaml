@@ -20,6 +20,8 @@ menu:
       url: https://github.com/diego-s-fernandes/
     - name: Twitter
       url: https://twitter.com/FernandesDiegao/
+    - name: LinkedIn 
+      url: https://www.linkedin.com/in/diego-fernandes-10908561/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
