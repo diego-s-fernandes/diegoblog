@@ -16,8 +16,10 @@ menu:
   main:
     - name: Posts
       url: https://www.blogdodiegao.com/
+      weight: 2
     - name: GitHub
       url: https://github.com/diego-s-fernandes/
+      weight: 3
     - name: Twitter
       url: https://twitter.com/FernandesDiegao/
     - name: LinkedIn 
@@ -26,6 +28,7 @@ menu:
       url: https://medium.com/@FernandesDiegao
     - name: Sobre
       url: /about/
+      weight: 1
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
