@@ -46,11 +46,7 @@ params:
     url: logo.jpg
     width: 50
 
-social:
-    twitter: "FernandesDiegao"
-    
-author: "Diego Fernandes"
-    
+
 markup:
   goldmark:
     renderer:
