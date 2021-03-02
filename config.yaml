@@ -14,7 +14,7 @@ permalinks:
   post: /:day/:month/:year/:slug/
 menu:
   main:
-    - name: Diego dos Santos Fernandes
+    - name: Posts
       url: https://www.blogdodiegao.com/
     - name: GitHub
       url: https://github.com/diego-s-fernandes/
