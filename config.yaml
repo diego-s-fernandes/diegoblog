@@ -10,7 +10,8 @@ ignoreFiles:
   - _cache$
   - \.knit\.md$
   - \.utf8\.md$
-permalinks: /:day/:month/:year/:slug/
+permalinks:
+  Posts: //:day/:month/:year/:slug/
 menu:
   main:
     - name: Posts
