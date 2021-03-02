@@ -46,9 +46,11 @@ params:
     url: logo.jpg
     width: 50
 
+social:
+    twitter: FernandesDiegao
+
 markup:
   goldmark:
     renderer:
       unsafe: true
-social:
-    twitter: FernandesDiegao    
+
