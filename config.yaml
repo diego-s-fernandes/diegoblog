@@ -24,7 +24,7 @@ menu:
       url: https://www.linkedin.com/in/diego-fernandes-10908561/
     - name: Medium 
       url: https://medium.com/@FernandesDiegao
-    - name: About
+    - name: Sobre
       url: /about/
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
