@@ -163,7 +163,7 @@ G3
 # Animação desde com indicadores desde o ano de 2014
 
 
-```{r eval=FALSE, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+```{r eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 ###
 G4 <-  FDI_0 %>% 
   filter(!is.na(region), region != "Aggregates") %>% 
@@ -181,4 +181,5 @@ G4 <-  FDI_0 %>%
 
 ```
 
+![](images/preview.gif)
 
