@@ -1,5 +1,5 @@
 ---
-title: Investimento externo
+title: Investimento Externo e Ambiente de Negócios
 author: Diego
 date: '2021-03-02'
 slug: investimento-externo
@@ -163,7 +163,7 @@ G3
 # Animação desde com indicadores desde o ano de 2014
 
 
-```{r eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
+```{r}
 ###
 # G4 <-  FDI_0 %>% 
 #   filter(!is.na(region), region != "Aggregates") %>% 
@@ -183,7 +183,7 @@ G3
 
 
 
-<img src="/post/2021-03-02-investimento-externo/images/preview.gif" alt="final image" width="400"/>
+
 
 
 
