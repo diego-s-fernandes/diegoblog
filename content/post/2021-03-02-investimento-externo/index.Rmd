@@ -165,18 +165,18 @@ G3
 
 ```{r eval=TRUE, message=FALSE, warning=FALSE, include=FALSE, paged.print=FALSE}
 ###
-G4 <-  FDI_0 %>% 
-  filter(!is.na(region), region != "Aggregates") %>% 
-   ggplot(aes(x = db , y =log_fdi, color = income))+
-  geom_point()+
-  transition_time(year) +
-   geom_text(aes(label=ifelse(country  %in% c("Brazil", "China"),as.character(country),'')), color = "black")+
-   labs(title = 'Year: {frame_time}', 
-        x = 'Doing Business', 
-        y = 'Foreign Direct Investment (FDI)',
-        color= "Income"
-        )+
-  ease_aes('linear')
+# G4 <-  FDI_0 %>% 
+#   filter(!is.na(region), region != "Aggregates") %>% 
+#    ggplot(aes(x = db , y =log_fdi, color = income))+
+#   geom_point()+
+#   transition_time(year) +
+#    geom_text(aes(label=ifelse(country  %in% c("Brazil", "China"),as.character(country),'')), color = "black")+
+#    labs(title = 'Year: {frame_time}', 
+#         x = 'Doing Business', 
+#         y = 'Foreign Direct Investment (FDI)',
+#         color= "Income"
+#         )+
+#   ease_aes('linear')
 
 
 ```
