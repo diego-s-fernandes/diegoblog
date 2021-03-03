@@ -182,7 +182,10 @@ G3
 ```
 
 
-![](images/preview.gif)
+
+<img src="/post/2021-03-02-investimento-externo/images/preview.gif" alt="final image" width="400"/>
+
+
 
 
 
