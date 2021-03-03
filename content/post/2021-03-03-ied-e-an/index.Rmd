@@ -1,15 +1,19 @@
 ---
 title: Investimento Externo e Ambiente de Negócios
 author: Diego
-date: '2021-03-02'
-slug: investimento-externo
+date: '2021-03-03'
+slug: ied-e-an
 categories: []
 tags: []
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
 library(tidyverse)
 library(janitor)
 library(gganimate)
@@ -180,16 +184,4 @@ G3
 
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
